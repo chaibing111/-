@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D966B969-8EFF-4BFC-AA00-81A9EE4C2ACE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GoogolButton2</RootNamespace>
+    <AssemblyName>GoogolButton2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\btnOFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\btnON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\green-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\green-on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\red-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\red-on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\images\1070632.png" />
+    <Content Include="bin\Debug\images\1072393.png" />
+    <Content Include="bin\Debug\images\1072763.png" />
+    <Content Include="bin\Debug\images\1077384.png" />
+    <Content Include="bin\Debug\images\1077543.png" />
+    <Content Include="bin\Debug\images\1096355.png" />
+    <Content Include="bin\Debug\images\1115543.png" />
+    <Content Include="bin\Debug\images\1130316.png" />
+    <Content Include="bin\Debug\images\1130631.png" />
+    <Content Include="bin\Debug\images\1138496.png" />
+    <Content Include="bin\Debug\images\1144981.png" />
+    <Content Include="bin\Debug\images\1155785.png" />
+    <Content Include="bin\Debug\images\1168386.png" />
+    <Content Include="bin\Debug\images\1168389.png" />
+    <Content Include="bin\Debug\images\1168392.png" />
+    <Content Include="bin\Debug\images\1168394.png" />
+    <Content Include="bin\Debug\images\1199314.png" />
+    <Content Include="bin\Debug\images\26276.png" />
+    <Content Include="bin\Debug\images\26408.png" />
+    <Content Include="bin\Debug\images\3717.png" />
+    <Content Include="bin\Debug\images\508249.png" />
+    <Content Include="bin\Debug\images\528787.png" />
+    <Content Include="bin\Debug\images\537779.png" />
+    <Content Include="bin\Debug\images\542926.png" />
+    <Content Include="bin\Debug\images\544437.png" />
+    <Content Include="bin\Debug\images\546567.png" />
+    <Content Include="bin\Debug\images\562255.png" />
+    <Content Include="bin\Debug\images\btnOFF1.png" />
+    <Content Include="bin\Debug\images\btnOFF2.png" />
+    <None Include="bin\Debug\images\btnON3.png" />
+    <None Include="bin\Debug\images\btnOFF3.png" />
+    <Content Include="bin\Debug\images\btnON1.png" />
+    <Content Include="bin\Debug\images\btnON2.png" />
+    <Content Include="bin\Debug\images\Googol.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
